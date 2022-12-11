@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ev4pWUZTiFD5d84KsjkhTye/ExeD9O8i5Kk5V9rH0etjI99hfXtG5hLBvWSEP7J26+Aj8GBkZ8xmIR8oi0xQOA==",
+  "success": true,
+  "projectFilePath": "C:\\git\\AudioBrowser_NET6Demo\\MediaFilesAPI\\MediaFilesAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.0\\microsoft.aspnetcore.components.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.0\\microsoft.aspnetcore.components.analyzers.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.0\\microsoft.aspnetcore.components.forms.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.0\\microsoft.aspnetcore.components.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.jsinterop\\7.0.0\\microsoft.jsinterop.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MediaFilesAPI depends on Microsoft.AspNetCore.Components.Web (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.Web 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.Web 7.0.0 was resolved.",
+      "libraryId": "Microsoft.AspNetCore.Components.Web",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}

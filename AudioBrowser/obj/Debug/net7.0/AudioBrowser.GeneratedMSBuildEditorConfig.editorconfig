@@ -1,0 +1,37 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AudioBrowser
+build_property.RootNamespace = AudioBrowser
+build_property.ProjectDir = C:\git\AudioBrowser_NET6Demo\AudioBrowser\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\git\AudioBrowser_NET6Demo\AudioBrowser
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/git/AudioBrowser_NET6Demo/AudioBrowser/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/git/AudioBrowser_NET6Demo/AudioBrowser/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/git/AudioBrowser_NET6Demo/AudioBrowser/Pages/AudioPreview.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXVkaW9QcmV2aWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/git/AudioBrowser_NET6Demo/AudioBrowser/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/git/AudioBrowser_NET6Demo/AudioBrowser/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
