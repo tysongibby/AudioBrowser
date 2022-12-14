@@ -42,12 +42,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var data = await MediaFiles.DecodeAudioFileAsync(File);
+        //var data = await MediaFiles.DecodeAudioFileAsync(File);
         var sw = new Stopwatch();
         await Task.Run(() =>
         {
             sw.Start();
-            svg = GenerateWaveformSvg(data);
+            //svg = GenerateWaveformSvg(data);
             sw.Stop();
         }, disposalCts.Token);
         message = $"{sw.ElapsedMilliseconds:F1}ms";
@@ -81,7 +81,7 @@
         await Task.Run(() =>
         {
             sw.Start();
-            ChangeVoiceCore(audioData);
+            //ChangeVoiceCore(audioData);
             sw.Stop();
         });
 

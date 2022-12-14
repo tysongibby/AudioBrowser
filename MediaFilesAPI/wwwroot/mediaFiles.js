@@ -17,6 +17,7 @@ export async function reopenLastDirectory() {
     return value ? { name: value.name, instance: DotNet.createJSObjectReference(value) } : null;
 }
 
+/*https://developer.mozilla.org/en-US/docs/Web/API/FileSystem*/
 export async function getFiles(directory) {
     // Build an array containing all the file entries
     const result = [];
@@ -24,7 +25,7 @@ export async function getFiles(directory) {
         result.push(await entry.getFile());
 
     // For each entry, get name/size/modified
-    return result.map(r => ({ name: r.name, size: r.size, lastModified: r.lastModifiedDate.toISOString() }));
+    return result.map(r => ({ name: r.name, size: r.size, lastModified: r.lastModifiedDate.toISOString(), artist: r.artist }));
 }
 
 export async function decodeAudioFile(name) {

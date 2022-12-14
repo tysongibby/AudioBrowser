@@ -31,5 +31,5 @@ public class MediaFiles : JSModule
         // When .NET is done with this JSDirectory, also release the underlying JS object
         public ValueTask DisposeAsync() => Instance.DisposeAsync();
     }
-    public record JSFile(string Name, long Size, DateTime LastModified);
+    public record JSFile(string Name, long Size, DateTime LastModified, string Artist);
 }
