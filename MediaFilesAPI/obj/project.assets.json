@@ -539,7 +539,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.Components.Web >= 7.0.0-rtm.22477.1"
+      "Microsoft.AspNetCore.Components.Web >= 7.0.0"
     ]
   },
   "packageFolders": {
@@ -588,7 +588,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": {
             "target": "Package",
-            "version": "[7.0.0-rtm.22477.1, )"
+            "version": "[7.0.0, )"
           }
         },
         "imports": [
@@ -607,20 +607,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "MediaFilesAPI depends on Microsoft.AspNetCore.Components.Web (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.Web 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.Web 7.0.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Components.Web",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

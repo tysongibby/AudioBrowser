@@ -511,7 +511,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.0-rtm.22477.1"
+          "Microsoft.AspNetCore.Components.Web": "7.0.0"
         },
         "compile": {
           "bin/placeholder/MediaFilesAPI.dll": {}
@@ -1025,7 +1025,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.0-rtm.22477.1"
+          "Microsoft.AspNetCore.Components.Web": "7.0.0"
         },
         "compile": {
           "bin/placeholder/MediaFilesAPI.dll": {}
@@ -1927,8 +1927,8 @@
     "net7.0": [
       "MediaFilesAPI >= 1.0.0",
       "Microsoft.AspNetCore.Components.QuickGrid >= 0.1.0-alpha.22351.1",
-      "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.0-rtm.22477.1",
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.0-rtm.22477.1",
+      "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.0",
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.0",
       "NeoSmart.PrettySize >= 3.1.1"
     ]
   },
@@ -1986,12 +1986,12 @@
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
-            "version": "[7.0.0-rtm.22477.1, )"
+            "version": "[7.0.0, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.0-rtm.22477.1, )"
+            "version": "[7.0.0, )"
           },
           "NeoSmart.PrettySize": {
             "target": "Package",
@@ -2009,12 +2009,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+            "version": "[7.0.1, 7.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -2022,40 +2028,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "MediaFilesAPI depends on Microsoft.AspNetCore.Components.Web (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.Web 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.Web 7.0.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Components.Web",
-      "targetGraphs": [
-        "net7.0",
-        "net7.0/browser-wasm"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "AudioBrowser depends on Microsoft.AspNetCore.Components.WebAssembly (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.WebAssembly 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.WebAssembly 7.0.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly",
-      "targetGraphs": [
-        "net7.0",
-        "net7.0/browser-wasm"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "AudioBrowser depends on Microsoft.AspNetCore.Components.WebAssembly.DevServer (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.WebAssembly.DevServer 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.WebAssembly.DevServer 7.0.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly.DevServer",
-      "targetGraphs": [
-        "net7.0",
-        "net7.0/browser-wasm"
-      ]
-    }
-  ]
+  }
 }

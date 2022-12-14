@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mGNIcmZe04vrGswPht9cWtVnjCPllX0+eGmg1wq7/gDcJhWgeI9ijnmz2KdlwbOp5lplfMAW3g7RN2ev3kW6ow==",
+  "dgSpecHash": "+OSkrFcU1ZSDB3S6upEyJhkBMNTLmBpbIZV5++T59dd2jpnGzdRbdZy2hbGSYa4QCySYJHowW7i+eqcos0Hqng==",
   "success": true,
   "projectFilePath": "C:\\git\\AudioBrowser_NET6Demo\\AudioBrowser\\AudioBrowser.csproj",
   "expectedPackageFiles": [
@@ -32,41 +32,8 @@
     "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\neosmart.prettysize\\3.1.1\\neosmart.prettysize.3.1.1.nupkg.sha512",
     "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\tyson.LAPPY9000\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.1\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "MediaFilesAPI depends on Microsoft.AspNetCore.Components.Web (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.Web 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.Web 7.0.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Components.Web",
-      "targetGraphs": [
-        "net7.0",
-        "net7.0/browser-wasm"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "AudioBrowser depends on Microsoft.AspNetCore.Components.WebAssembly (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.WebAssembly 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.WebAssembly 7.0.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly",
-      "targetGraphs": [
-        "net7.0",
-        "net7.0/browser-wasm"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "AudioBrowser depends on Microsoft.AspNetCore.Components.WebAssembly.DevServer (>= 7.0.0-rtm.22477.1) but Microsoft.AspNetCore.Components.WebAssembly.DevServer 7.0.0-rtm.22477.1 was not found. An approximate best match of Microsoft.AspNetCore.Components.WebAssembly.DevServer 7.0.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly.DevServer",
-      "targetGraphs": [
-        "net7.0",
-        "net7.0/browser-wasm"
-      ]
-    }
-  ]
+  "logs": []
 }
