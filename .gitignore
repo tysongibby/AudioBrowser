@@ -66,4 +66,9 @@ UCosmic.Www.Mvc.Publish.xml
 /Private/
 
 #Ignore VS settings folder
-/.vs
+/.vs/
+/.vs/AudioBrowser/DesignTimeBuild/.dtbcache.v2
+/.vs/AudioBrowser/v17/.suo
+/.vs/AudioBrowser/v17/.futdcache.v2
+/.vs/ProjectEvaluation/audiobrowser.projects.v5.2
+/.vs/ProjectEvaluation/audiobrowser.metadata.v5.2
