@@ -28,8 +28,8 @@
                 </ColumnOptions>
             </PropertyColumn>
             @*<PropertyColumn Title="Artist" Property="@(f => f.Artist)" Sortable="true" />*@
-            <PropertyColumn Title="Size" Property="@(f => new PrettySize(f.Size))" Sortable="true" />
-            <PropertyColumn Title="Modified" Property="@(f => f.LastModified)" Sortable="true" />
+            <PropertyColumn Title="Size" Property="@(f => new PrettySize(f.Size))" Sortable="true" />            
+            <PropertyColumn Title="Artist" Property="@(f => f.Artist)" Sortable="true" />
             <TemplateColumn Title="Preview">
                 <AudioPreview File="@context" />
             </TemplateColumn>

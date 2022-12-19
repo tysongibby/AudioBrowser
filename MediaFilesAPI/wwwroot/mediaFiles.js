@@ -17,30 +17,57 @@ export async function reopenLastDirectory() {
     return value ? { name: value.name, instance: DotNet.createJSObjectReference(value) } : null;
 }
 
-export async function getFiles(directory) {
-    // Build an array containing all the file entries
-    const result = [];
-    for await (const entry of directory.values())
-        result.push(await entry.getFile());
+//export async function getFiles(directory) {
+//    // Build an array containing all the file entries
+//    const result = [];
+//    for await (const entry of directory.values())
+//        result.push(await entry.getFile());
 
-    // For each entry, get name/size/modified
-    return result.map(r => ({ name: r.name, size: r.size, lastModified: r.lastModifiedDate.toISOString(), artist: r.artist }));
+//    // For each entry, get name/size/modified
+//    return result.map(r => ({ name: r.name, size: r.size, lastModified: r.lastModifiedDate.toISOString(), artist: r.artist }));
+//}
+
+export async function getFiles(directoryHandle) {
+    let files = [];
+    
+    for await (const handle of directoryHandle.values()) {
+        if (handle.kind === 'directory') {                       
+            files.push(...await getFiles(handle));
+        }
+        else if (handle.kind === 'file') {
+            const isMusicFile = hasMusicFileExtension(handle);
+            if (isMusicFile) {
+                files.push(await handle.getFile())
+            }
+        }
+    }        
+    return files;
 }
 
-//export async function getFiles(directoryHandle) {
-//    // Build an array containing all the file entries
-//    const files = [];
-//    for await (const handle of directoryHandle.values()) {
-//        const { kind } = handle;
-//        if (handle.kind === 'directory') {
-//            //files.push(await handle.getFile());
-//            files.push(...await getFiles(handle));
-//        } else {
-//            files.push(await handle.getFile());
-//        }
-//    }
-//    return files;//.map(r => ({ name: r.name, size: r.size, lastModified: r.lastModifiedDate.toISOString(), artist: r.artist }));
-//}
+function hasMusicFileExtension(handle) {
+    let result = false;
+    const musicFileExtensionList = ['mp3', 'm4a', 'mp4', 'mpeg', 'flac', 'oog', 'wav'];
+    for (const musicFileExtension of musicFileExtensionList) {
+        if (handle.name.endsWith(musicFileExtension)) {
+            result = true;
+            return result;
+        }
+    }
+    return result
+}
+
+function fileListExtensionFilter(fileNameList, extensionFilterList) {
+    let files = [];
+    for (const fileName of fileNameList) {
+        for (const extensionFilter of extensionFilterList) {
+            if (fileName.endsWith(extensionFilter)) {
+                files.push(fileName);
+            }
+        }
+    }
+    return files;
+}
+
 
 export async function decodeAudioFile(name) {
     // Read the file
