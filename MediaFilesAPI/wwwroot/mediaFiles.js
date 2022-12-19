@@ -41,7 +41,7 @@ export async function getFiles(directoryHandle) {
             }
         }
     }        
-    return files;
+    return files.map(r => ({ name: r.name, size: r.size }));
 }
 
 function hasMusicFileExtension(handle) {
