@@ -1,7 +1,8 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.QuickGrid
 @using NeoSmart.PrettySize
-@inject MediaFiles MediaFiles
+@using AudioBrowser.Services
+@inject AudioFilesAccess MediaFiles
 
 <menu>
     <span>Folder:</span>
@@ -26,10 +27,9 @@
                            autofocus placeholder="Name..." />
                     </div>
                 </ColumnOptions>
-            </PropertyColumn>
-            @*<PropertyColumn Title="Artist" Property="@(f => f.Artist)" Sortable="true" />*@
+            </PropertyColumn>            
             <PropertyColumn Title="Size" Property="@(f => new PrettySize(f.Size))" Sortable="true" />            
-            <PropertyColumn Title="Artist" Property="@(f => f.Artist)" Sortable="true" />
+            @*<PropertyColumn Title="Artist" Property="@(f => f.Artist)" Sortable="true" />*@
             <TemplateColumn Title="Preview">
                 <AudioPreview File="@context" />
             </TemplateColumn>
@@ -39,10 +39,10 @@
 
 @code {
     string? name;
-    IQueryable<MediaFiles.JSFile>? files;
+    IQueryable<AudioFilesAccess.JSFile>? files;
     string? searchName;
 
-    IQueryable<MediaFiles.JSFile>? FilteredFiles => string.IsNullOrWhiteSpace(searchName)
+    IQueryable<AudioFilesAccess.JSFile>? FilteredFiles => string.IsNullOrWhiteSpace(searchName)
         ? files
         : files?.Where(f => f.Name.Contains(searchName, StringComparison.CurrentCultureIgnoreCase));
 

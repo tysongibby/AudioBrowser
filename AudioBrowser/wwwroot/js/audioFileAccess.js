@@ -28,8 +28,7 @@ export async function reopenLastDirectory() {
 //}
 
 export async function getFiles(directoryHandle) {
-    let files = [];
-    
+    let files = [];    
     for await (const handle of directoryHandle.values()) {
         if (handle.kind === 'directory') {                       
             files.push(...await getFiles(handle));
